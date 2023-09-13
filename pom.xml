@@ -16,7 +16,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Twentyfivesrls Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Twentyfivesrls/*</url>
+            <url>https://maven.pkg.github.com/Twentyfivesrls/twentyfive-controller</url>
         </repository>
     </distributionManagement>
     <name>twentyfive-controller</name>
@@ -26,18 +26,9 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -46,14 +37,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
